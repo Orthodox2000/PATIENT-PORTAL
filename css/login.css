@@ -1,0 +1,198 @@
+ 
+.res_container
+{   
+    width: 100%;
+    height: 500px; 
+    display: grid;  
+    place-items: center;
+}
+.switcher
+{   
+    margin-top: 30px;
+    cursor: pointer;
+    color: rgb(59, 10, 127);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    border:3px solid rgb(255, 255, 255); 
+    display: flex;
+    justify-content: right; 
+    box-shadow:2px 2px 10px rgb(150, 146, 146);
+    align-items: center;    
+    background: linear-gradient(270deg, rgb(238, 174, 220) 0%, rgb(148, 188, 233) 100%);
+}
+ 
+.switch
+{
+    height: 80%;
+    margin-left: 5px;
+    margin-right: 5px; 
+    width: 50%;
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: 1px solid white;
+    background: linear-gradient(90deg, rgba(237, 237, 241, 0.274) 0%, rgba(208, 208, 226, 0.307) 45%, rgba(202, 238, 245, 0.233) 100%);
+}
+.switch:hover
+{ 
+    animation: co 0.1s ease-in;
+    border: 2px solid white;
+    background: linear-gradient(90deg, rgb(238, 174, 220) 0%, rgb(148, 188, 233) 100%);
+}
+
+ 
+.login_selector
+{
+    min-width: 800px;
+    height: 500px;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login
+{ color: rgb(243, 243, 245);
+   min-width: 450px;
+   height: 500px; 
+   display: grid;
+   grid-template-columns: 100px; 
+   margin-top: 5%;
+}
+.signup 
+{ 
+   width: 500px;
+   height: 500px; 
+   display: grid;
+   grid-template-columns: 100px;  
+   margin-top: 5%; 
+}
+form
+{   margin-top: 30px;
+    display: inline-flex; 
+    flex-direction: column; 
+    border: 1px solid;
+    width: 450px;
+    height: 400px; 
+    row-gap: 50px;
+    justify-content: center; 
+    border: none;
+}
+input[type="text"]
+{
+    height: 30px;
+    width: 80%;
+    text-align: center;
+    
+}
+ 
+input[type="password"]
+{
+    padding:12px;
+	width:80%;
+    height: 30px;
+    text-align: center;
+
+}
+button[type="submit"]
+{
+    width: 150px;
+    background-color: white;
+}
+.subm
+{
+    height: 50px;
+    width: 150px;
+    border-radius: 20px 20px ;
+    margin-left: 120px;
+    border-color: rgb(255, 0, 204);
+    background-color: aliceblue;
+}
+ 
+.subm:hover
+{
+    border: 5px solid white;
+    box-shadow: 1px 1px 10px rgb(99, 74, 96);
+    animation: co 0.1s ease;
+    background: linear-gradient(90deg, rgb(238, 174, 220) 0%, rgb(148, 188, 233) 100%);
+}
+@keyframes co 
+{
+    0%{
+        background: linear-gradient(90 deg,white 100%);
+    }
+    25%
+    {
+        background: linear-gradient(90deg, rgb(238, 174, 220) 30%, white 70%);
+    }
+    50%
+    {
+        background: linear-gradient(90deg, rgb(238, 174, 220) 50%, white 100%);
+    }
+    75%
+    {
+        background: linear-gradient(90deg, rgb(238, 174, 220) 75%, white 100%);
+
+    }
+    100%
+    {
+        background: linear-gradient(90deg, rgb(238, 174, 220) 0%, rgb(148, 188, 233) 100%);
+    }
+    
+}
+.shift1 
+{
+    height: 400px;
+    width:450px; 
+    background: linear-gradient(90deg, rgba(238,174,220,1) 0%, rgba(148,187,233,1) 100%);
+    position: relative;
+    z-index: -999; 
+    border-radius: 50px;
+    margin-top: 20%;
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: large;  
+    text-shadow: 2px 2px 7px rgb(43, 32, 41);
+}
+.shift2
+{
+    height: 400px;
+    width:450px; 
+    background: linear-gradient(90deg, rgba(238,174,220,1) 0%, rgba(148,187,233,1) 100%);
+    position: relative;
+    z-index: -999;
+    border-radius: 50px;
+    margin-top: 20%;
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: large;
+    color: aliceblue;
+    text-shadow: 2px 2px 7px rgb(52, 40, 46);
+    box-shadow:-10px 10px 10px rgb(150, 146, 146);
+}
+.shift1
+{
+    display: none;
+    justify-content: center;
+    align-items: center;  
+    box-shadow:10px 10px 10px rgb(150, 146, 146);
+}
+.two
+{
+    opacity: 0;
+    margin-left: 50%;
+}
+ 
+ 
+#down
+{
+    position:relative;
+    margin-top: 200px;
+    bottom: 0;
+}
+ 

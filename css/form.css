@@ -1,0 +1,34 @@
+.form_main
+{
+    border: 1px solid black;
+    width: 98%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_sub
+{
+    width: 200px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+
+}
+form
+{ display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    justify-content: center;
+    text-align: center; 
+}
+select
+{
+    width: 100%;
+}
+.pno
+{
+    height: 30px !important;
+}
+ 
