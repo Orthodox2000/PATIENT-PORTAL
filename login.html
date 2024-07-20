@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title> SWACS Hospital </title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/login.css" type="text/css" rel="stylesheet">
+    <script src="js/switch.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="top">
+        <div>
+        Contact Us +91 96366 20000 / 01 | SWACS@hospital.com
+        </div>
+        </div>
+        
+        <div class="logo">
+        <div>
+        <table>
+        <tr>
+        <td class="main-logo"  style="font-size:50px;font-family:forte;"> <font color="#428bca"> SWACS  </font><font color="#000"> Hospital</font> </td>
+        <td id="links"> <br> <br>
+        <font size="4px">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="service.html">SERVICE</a> 
+        <a href="contact.html">CONTACT US</a>
+        <a href="login.html">PATIENT LOGIN</a>
+        </font>
+        </td>
+        </tr>
+        </table>
+        </div>
+        </div>
+
+     <section class="res_container">
+        <div class="switcher" id="switche">
+            <div class="switch" id="switc" onclick="switcher()"> SIGN UP</div>
+        </div>
+        <div class="login_selector">
+            
+            <div class="login" id="login">
+                <div class="shift1" id="shift1"> CREATE NEW USER</div>
+                <form method="post" action="php/login.php" id="one"class=one  > 
+                    <input type="text" placeholder="username" name="login_name">
+                    <input type="password" placeholder="password" name="login_pass">
+                    <button type="submit" value="submit"class="subm">SUBMIT</button> 
+                </form>
+
+            </div>
+            <div class="signup" id="signup" >
+                <div class="shift2" id="shift2"> LOG IN WITH YOUR REGISTERED USERNAME AND PASSWORD</div>
+                <form class="two" id="two" method="POST" action="php/signup.php" > 
+                    <input type="text" placeholder="username" name="signup_username">
+                    <input type="password" placeholder="password" name="signup_pass">
+                    <button type="submit" value="submit" class="subm">SUBMIT</button> 
+                </form>
+            </div>
+           
+        </div>
+     </section>
+
+     <section id="down">
+        <div class="nav_down">
+            <div>
+            &copy; SWACS Hospital, site designed & developed by TYIT
+            </div>
+            </div>
+     </section>
+     
+    
+</body>
+</html>
+ 
+ 
