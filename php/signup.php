@@ -32,8 +32,9 @@
         while($row = mysqli_fetch_assoc($res)) 
         {
           if($row["uname"]==$uname)
-          {  
+          {  //javascript redirect
             echo "<script>window.history.back();alert('username taken please select different username');</script>";
+           //html redirect backup
                 echo "<div class=response onclick='gb();'>'".$row["uname"]."'<br>this USERNAME ALREADY EXIST! <br>click here to return</div>";
                 die ();
                       
