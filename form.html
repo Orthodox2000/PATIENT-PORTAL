@@ -23,8 +23,7 @@
         <td id="links"> <br> <br>
         <font size="4px">
         <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT US</a>
-        <a href="service.html">SERVICE</a> 
+        <a href="about.html">ABOUT US</a> 
         <a href="contact.html">CONTACT US</a>
         <a href="login.html">PATIENT LOGIN</a>
         </font>
@@ -36,17 +35,27 @@
 
 
         <div class="form_main">
-            <div class="form_sub"> 
-                <form action="#">
+            <div class="form_sub">  
+                <div class="blogo"></div>
+                <form method="POST" action="php/form.php">
+                    <div class="heading">patienT REGISTRATION </div>
 
-                    <label for="P_name">patient name</label>
-                    <input type="text" name="p_name" class="p_name">
+                    <label for="p_fname">patient name</label>
+                    <input type="text" name="p_fname" class="p_age">
 
-                    <label for="p_address">address</label>
-                    <input type="text" name="p_address" class="p_age">
+                    <label for="p_lname">last name</label>
+                    <input type="text" name="p_lname" class="p_age">
 
-                    <label for="p_dob">DOB</label>
+                    <label for="p_dob">DATE OF BIRTH</label>
                     <input type="date" name="p_dob">
+
+                    <label for="p_gender">gender</label>
+                    <select name="p_gen" class="p_gen"  >
+                        <option value="male">MALE</option>
+                        <option value="female">FEMALE</option>
+                        <option value="other">OTHER</option>
+                    
+                    </select>
 
                     <label for="p_bg">blood group</label>
                      <select name="p_bg" class="p_bg">
@@ -61,14 +70,60 @@
 
                      </select>
 
-                    <label for="p_symptom">symptoms</label>
-                    <input type="text" name="p_symp">
+                     <label for="p_allergies">known allergy</label>
+                     <input type="text" name="p_allergies"  >
+
+                    <label for="p_addr">address</label>
+                    <input type="text" name="p_addr">
+
+                    <label for="p_insurance">insurance policy number</label>
+                    <input type="text" name="p_insurance">
 
                     <label for="p_contact">contact</label>
-                    <input type="text" name="p_con" class="pno">
-                    <lable for="p_emcon">emergency contact</lable>
-                    <input type="text" name="p_emcon" class="pno">
+                    <input type="number" name="p_con" class="pno" placeholder="MOBILE NUMBER"> 
 
+                    <input type="number" name="p_ec" class="pno" placeholder="EMERGENCY CONTACT">
+ 
+                   <input type="text" name="p_symp" class="symp" placeholder="SYMPTOMS / MEDICATION">
+
+                    
+                   <h2>SELECT PREFERED HOSPITAL</h2>
+                    <div class="hos-select">
+                       
+                    <div class="hosp-div">
+                     <label for="h1"><img src="/img/appolo.jpeg" alt=""></label>    
+                    <input type="radio" name="h1" value="h1"> 
+                    </div>
+
+                    <div class="hosp-div">
+                        <label for="h1"><img src="/img/cityhosp.png" alt=""></label>    
+                       <input type="radio" name="h1" value="h2"> 
+                       </div>
+
+                       <div class="hosp-div">
+                        <label for="h1"><img src="/img/hudson.jpg" alt=""></label>    
+                       <input type="radio" name="h1" value="h3"> 
+                       </div>
+
+                       <div class="hosp-div">
+                        <label for="h1"><img src="/img/govhosp.jpg" alt=""></label>    
+                       <input type="radio" name="h1" value="h4"> 
+                       </div>
+                    </div>
+
+
+                    <button type="submit" value="submit" class="subm">SUBMIT</button> 
                 </form>
+                
             </div>
         </div>
+
+        <section id="down">
+            <div class="nav_down">
+                <div>
+                &copy; SWACS Hospital, site designed & developed by TYIT
+                </div>
+                </div>
+         </section>
+</body>
+</html>    
