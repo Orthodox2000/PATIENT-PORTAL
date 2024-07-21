@@ -14,9 +14,9 @@
 <?php
     //connect to the data base
     $host="sql12.freesqldatabase.com";
-    $uname="sql12718118";
-    $pass="SDqylYlSMK";
-    $dbname="sql12718118";
+    $uname=" ";
+    $pass=" ";
+    $dbname=" ";
     // if data is submitted it is added to the database
     $conn=new mysqli($host,$uname,$pass,$dbname);
     if($conn->connect_error)
