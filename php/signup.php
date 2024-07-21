@@ -14,9 +14,9 @@
 <?php
     //connect to the data base
     $host="sql12.freesqldatabase.com";
-    $uname=//username;
-    $pass=//password;
-    $dbname=//name of database;
+    $uname="sql12718118";
+    $pass="SDqylYlSMK";
+    $dbname="sql12718118";
     // if data is submitted it is added to the database
     $conn=new mysqli($host,$uname,$pass,$dbname);
     if($conn->connect_error)
@@ -32,9 +32,8 @@
         while($row = mysqli_fetch_assoc($res)) 
         {
           if($row["uname"]==$uname)
-          {  //javascript redirect
+          {  
             echo "<script>window.history.back();alert('username taken please select different username');</script>";
-           //html redirect backup
                 echo "<div class=response onclick='gb();'>'".$row["uname"]."'<br>this USERNAME ALREADY EXIST! <br>click here to return</div>";
                 die ();
                       

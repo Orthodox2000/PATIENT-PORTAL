@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,9 +14,9 @@
 <?php
 //connect to the data base
     $host="sql12.freesqldatabase.com";
- $uname=//username;
-    $pass=//password;
-    $dbname=//name of database;
+    $uname="sql12718118";
+    $pass="SDqylYlSMK";
+    $dbname="sql12718118";
     // if data is submitted it is added to the database
     $conn=new mysqli($host,$uname,$pass,$dbname);
     if($conn->connect_error)
