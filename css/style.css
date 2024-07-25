@@ -1,10 +1,11 @@
 body 
 {   
-	width: 100%;  
+	width: auto;
+	min-width: 1200px;  
 }
 .all_body
 {  
-	width: 100%;  
+	min-width: 1200px;  
 
 }
 .top{
@@ -27,51 +28,48 @@ body
 
  
 
-.logo{
-	width:100%;
+.logo{ 
 	border-bottom:2px solid #f0f0f0;  
 	position: sticky;
-	top: 0;
+	top: 5;
 	background-color: #f6f5fa;
 	white-space: nowrap; 
-	height: 80px;
-	z-index: 2;
+	height: 50px;
+	z-index: 3;
+	display: flex;
+	justify-content: right;
+	align-content: center; 
+	min-width:1200px;
 	
 }
  
 .main-logo
 {
-	width: 600px; 
-	white-space: nowrap; 
-}
-.logo div{
-	width:100%;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	padding:10px;
-	text-align:left;
-	display: flex;
-	justify-content: flex-start; 
-	white-space: nowrap; 
+	width: 400px; 
+	white-space: nowrap;  
+	position: absolute;
 	height: 50px; 
-}
+	left: 2%; 
+}  
  
  #links
  {  width: 500px;
 	height: 100%;
 	display: flex;
 	white-space: nowrap;
-	justify-content: center;
-	padding: 10px;  
+	justify-content: space-evenly; 
+	align-items: center;
+	text-decoration: none; 
+	margin-right: 5%; 
+ 
  }
-.logo div table a{
-	padding:10px;
-	text-decoration:none;
-	color:rgb(107, 106, 106); 
-    white-space: nowrap;  
-	 
-	}
+ #links a{
+	color: gray;
+	text-decoration: none;
+	font-weight: 500;
+ }
 
-.logo div table a:hover{
+#links a:hover{
 	color:#428bca;
 	border-bottom:2px solid gray; 
 	
@@ -105,6 +103,7 @@ body
 	border-bottom:2px solid #f0f0f0;
 	display: flex;
 	justify-content: center;
+	background-color: #f0f0f078;
 }
 .bottom div{
 	width:1200px;
@@ -117,7 +116,7 @@ body
 	padding-top:30px;
 	width:1100px;
 	text-align:justify;
-	color:rgb(60, 58, 58);
+	color:rgb(41, 42, 44);
 	font-size:20px;
 	display: flex;
 	justify-content: center;
@@ -140,7 +139,7 @@ body
 }
 .bottom_up div table{
 	padding-top:30px;
-	font-size:30px;
+	font-size:20px;
 	width:1100px;
 	text-align:center; 
 	font-family:calibri;
@@ -149,31 +148,29 @@ body
 
 input[type="text"]{
 	padding:12px;
-	width:250px;
+	width:250px !important;
 }
 select{
 	padding:12px;
-	width:250px;
+	width:250px !important;
 }
-.message{
-	padding:50px;
+.message{ 
 	width:550px !important;
 	height: 100px !important;
 	text-align: center;
 }
 input[type="date"]{
 	padding:12px;
-	width:250px;
+	width:250px !important;
 }
 input[type="time"]{
 	padding:12px;
-	width:250px;
+	width:250px !important;
 }
  
 
 
-.nav_down{
-	width:100%;
+.nav_down{ 
 	background-image:linear-gradient(270deg, rgb(238, 174, 220) 0%, rgb(148, 188, 233) 100%) !important;
 	border-bottom:2px solid #f0f0f0;
 	position:fixed;
@@ -187,6 +184,7 @@ input[type="time"]{
 	background-color:#37313171;
 	font-family:calibri; 
 	text-align:left;
+	white-space: nowrap;
 }
 .img {
     width: 200px;
@@ -300,14 +298,14 @@ label
 }
 .blogo
 {
-    background-image: url("/img/medlogo.png");
+    background-image: url("/img/MED.jpg"); 
     background-position: center; 
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: contain;
     position: absolute;
     z-index: -1;
-    filter: blur(20px);
+    filter: blur(10px);
     width: 100%;
-    height: 1500px;
+    height: 900px;
 
 }

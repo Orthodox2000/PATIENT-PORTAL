@@ -81,17 +81,17 @@ form
 }
 input[type="text"]
 {
-    height: 30px;
-    width: 80%;
+    height: 50px !important;
+    width: 300px !important;
     text-align: center;
     
 }
  
 input[type="password"]
 {
-    padding:12px;
-	width:80%;
-    height: 30px;
+    padding:2px;
+	width:300px !important;
+    height: 50px !important ;
     text-align: center;
 
 }
