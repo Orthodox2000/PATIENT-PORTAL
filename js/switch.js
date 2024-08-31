@@ -27,6 +27,8 @@ function switcher()
 
 function gb()
 {  
-    window.history.back();
+    window.open("../login.html","_self");
 
 }
+
+
