@@ -1,29 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <link href="../css/reply.css" type="text/css" rel="stylesheet">
-        <script> function gb()
-        {
-            window.open("../index.html","_self");
+<?php  session_start();
+ 
 
-        }
-        </script>
-    </head>
+// Access session data
 
-</html>
+$u = $_SESSION['id'];
 
-<?php
+$up = $_SESSION['pa'];
     //connect to the data base
     $host="sql12.freesqldatabase.com";
-    $uname=" ";
-    $pass=" ";
-    $dbname=" ";
+    $uname="sql12718118";
+    $pass="SDqylYlSMK";
+    $dbname="sql12718118";
     // if data is submitted it is added to the database
     $conn=new mysqli($host,$uname,$pass,$dbname);
     if($conn->connect_error)
     die("no connecction"); 
  
-    $data=array($_POST['p_fname'],$_POST['p_lname'],$_POST['p_dob'],$_POST['p_gen'],$_POST['p_bg'],$_POST['p_allergies'],$_POST['p_addr'],$_POST['p_insurance'],$_POST['p_con'],$_POST['p_ec'],$_POST['p_symp'],$_POST['h1'],);
+    $data=array($_POST['p_fname'],$_POST['p_lname'],$_POST['p_dob'],$_POST['p_gen'],$_POST['p_bg'],$_POST['p_allergies'],$_POST['p_addr'],$_POST['p_insurance'],$_POST['p_con'],$_POST['p_ec'],$_POST['p_symp'],$_POST['h1']);
  
  
     if($data[0]==NULL)
@@ -41,12 +34,13 @@
     p_con,
     p_ec,
     p_symp,
-    h1
+    h1,
+    usern
   )
-VALUES('','$data[0]','$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','$data[7]','$data[8]','$data[9]','$data[10]','$data[11]');";
+VALUES('','$data[0]','$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','$data[6]','$data[7]','$data[8]','$data[9]','$data[10]','$data[11]','$u');"; 
 
 if($conn->query($insert_query)===TRUE)
-echo "<div class=response onclick='gb();'> information registered successfully!<br>click to return</div>";
+echo "<div class=response onclick='gb();'> information registered successfully!<br>log in avaliable for user $u</div>";
 else
 echo "<div class=response onclick='gb();'>failure to register data! <br>click to return to homepage</div>"; 
 
@@ -56,4 +50,18 @@ echo "<div class=response onclick='gb();'>failure to register data! <br>click to
     $conn->close();
 
 
-?>
+?> 
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="../css/reply.css" type="text/css" rel="stylesheet">
+        <script> function gb()
+        {
+            window.open("../index.html","_self");
+
+        }
+        </script>
+    </head>
+
+</html>
